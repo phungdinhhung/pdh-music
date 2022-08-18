@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/music_player/assets/css/main.css">
+    <link rel="stylesheet" href="/music_player/assets/css/scripts.js">
+    <link rel="stylesheet" href="/music_player/assets/font/fontawesome-free-6.1.1-web/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="player">
+        <div class="player-wrapper flow">
+            <!-- Dashboard -->
+            
+            <!-- Header -->
+            <h1 class="header">Now Playing</h1>
+            <!-- CD -->
+                <div class="cd-thumb"></div>
+            <div class="song">
+                    <h2 class="title"></h2>
+                    <h3 class="author"></h3>
+            </div>
+            <div class="progress-area">
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="timer">
+                    <span class="begin"></span>
+                    <span class="end"></span>
+                </div>
+            </div>
+            <div class="control">
+                <div class="btn btn-list">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="btn btn-prev">
+                    <i class="fa-solid fa-caret-left"></i>
+                </div>
+                <div class="btn btn-play">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                </div>
+                <div class="btn btn-next">
+                    <i class="fa-solid fa-caret-right"></i>
+                </div>
+                <div class="btn btn-ramdom">
+                    <i class="fa-solid fa-repeat"></i>
+                    <i class="fa-solid fa-shuffle"></i>
+                </div>
+            </div>
+            <div class="volume-area">
+                <div class="volume-icon">
+                    <i class="fa-solid fa-volume-high"></i> 
+                    <i class="fa-solid fa-volume-xmark"></i>
+                    <i class="fa-solid fa-volume-low"></i>
+                    
+                </div>
+                <div class="volume-bar">
+                        <div class="volume"></div>
+                </div>
+            </div>
+            <audio id="audio" class="audio-display" src=""></audio>
+        </div>
+        <!-- Playlist -->
+        <div class="playlist">
+            <div class="playlist-header">
+                <div class="header-name">
+                        <i class="header-icon fa-solid fa-music"></i>
+                        <span class="content">My Playlist</span>
+                </div>
+                <div class="header-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+
+            </div>
+            <ul class="playlist-wrapper">
+            </ul>
+        </div>
+    </div>
+</div>
+    <script src="/music_player/assets/css/scripts.js"></script>
+</body>
+</html>
